@@ -31,7 +31,7 @@ namespace Kompresia
 
 
 
-            string valueString = "Succed";
+            string valueString = "Succed!";
             Console.WriteLine(valueString);
 
         }
