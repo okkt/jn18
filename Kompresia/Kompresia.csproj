@@ -50,7 +50,6 @@
     <Compile Include="Huffman\AdaptiveHuffman.cs" />
     <Compile Include="Huffman\Node.cs" />
     <Compile Include="Huffman\VitterTree.cs" />
-    <Compile Include="JSON\JsonH.cs" />
     <Compile Include="LZ\LZ77.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
