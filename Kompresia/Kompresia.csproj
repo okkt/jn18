@@ -61,6 +61,7 @@
   <ItemGroup>
     <Folder Include="ArithmeticCoding\" />
     <Folder Include="RLE\" />
+    <Folder Include="XGrind\" />
     <Folder Include="Xmill\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
