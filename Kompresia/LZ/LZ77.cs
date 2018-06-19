@@ -108,7 +108,7 @@ namespace Kompresia.LZ
             while (dataToBeEncoded.Length > 0)
             {
                 var indexInData = 0;
-                var offset = 2047;
+                var offset = 2047; // nastaveny offset na 2047, polovica CHAR_BLOCK_LENGTH
                 var actualDictionary = dictionary.ToString();
                 phrase += dataToBeEncoded[indexInData];
                 var indexOfPhrase = actualDictionary.IndexOf(phrase, 0);
@@ -131,6 +131,9 @@ namespace Kompresia.LZ
                     writer.WriteBlock(bitBuffer);
                     bitBuffer = compressedPhrase.GetRange(missingBitsCount, compressedPhrase.Count - missingBitsCount);
                 }
+
+
+
                 dictionary.Append(dataToBeEncoded.ToString(0, phrase.Length));
                 if (dictionary.Length > DICTIONARY_SIZE)
                     dictionary.Remove(DICTIONARY_SIZE, dictionary.Length - DICTIONARY_SIZE);
